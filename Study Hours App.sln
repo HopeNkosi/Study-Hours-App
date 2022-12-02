@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study Hours App", "Study Hours App.csproj", "{58570954-BABE-4E8B-91AF-2691075484DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58570954-BABE-4E8B-91AF-2691075484DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58570954-BABE-4E8B-91AF-2691075484DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58570954-BABE-4E8B-91AF-2691075484DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58570954-BABE-4E8B-91AF-2691075484DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0295D7BA-E71A-42F1-B4FC-D91E1312A6F7}
+	EndGlobalSection
+EndGlobal

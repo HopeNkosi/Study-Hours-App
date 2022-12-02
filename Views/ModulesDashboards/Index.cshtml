@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Study_Hours_App.Models.ModulesDashboard>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>My Current Modules</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ModuleCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModuleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModuleNumberOfCredits)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassHoursPerWeek)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MySelfStudy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SemesterDashbaord)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleNumberOfCredits)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassHoursPerWeek)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MySelfStudy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SemesterDashbaord.SemesterName)
+            </td>
+            
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ModulesDashboardId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ModulesDashboardId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ModulesDashboardId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

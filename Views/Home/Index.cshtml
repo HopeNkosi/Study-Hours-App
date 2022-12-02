@@ -1,0 +1,24 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (SignInManager.IsSignedIn(User))
+{
+   <div class="text-center">
+    <h1 class="display-4">Welcome to Study Hours App</h1>
+    <p><a class="btn btn-outline-primary float-center" asp-controller="SelfStudyHours" asp-action="Index">My Dashboard</a></p>
+    <p><a class="btn btn-outline-primary float-center" asp-controller="MyHoursDashboards" asp-action="Index">My Study Hours</a></p>
+</div> 
+}
+else
+{
+<div class="text-center">
+    <h1 class="display-4">Please Sign In To Access StudyApp</h1>
+    <p><a class="btn btn-outline-primary float-center" asp-area="Identity" asp-page="/Account/Login">
+                                    <i class="bi bi-eye-fill"></i> Login
+                                </a></p>
+</div>
+};
